@@ -1,5 +1,7 @@
 @use 'variaveis';
 @use 'hero';
+@use 'shows';
+@use 'plans';
 
 
 @font-face {
@@ -26,7 +28,6 @@
 
 body {
     background-color: variaveis.$corDeFundo;
-    font-family: Avenir, sans-serif;
 }
 
 @mixin text($fontSize: 16px) {
@@ -94,3 +95,15 @@ body {
         @include title(22px);
     }
 } 
+
+
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: #6421ff;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
